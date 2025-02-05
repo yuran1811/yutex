@@ -1,2 +1,13 @@
-*.gz
-*.pdf
+*.aux*
+*.bbl*
+*.blg*
+*.fdb_latexmk
+*.fls
+*.gz*
+*.log*
+*.lol
+*.out
+*.pyg
+*.synctex*
+*.toc
+_minted*
