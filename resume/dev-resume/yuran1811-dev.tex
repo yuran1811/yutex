@@ -1,0 +1,180 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{4.2pt}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\labelitemii}{\( \circ \)}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+%----------HEADING-------------------------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
+	\textbf{\href{https://github.com/yuran1811}{\Large Ngo Nguyen The Khoa}} & Email: \href{mailto:khoanntti2023@gmail.com}{khoanntti2023@gmail.com}\\
+	\href{https://www.linkedin.com/in/yuran-legends-6252b6222}{linkedin/yuran-legends} & Mobile: \href{tel:+84382423217}{+84 382423217} \\
+\end{tabular*}
+
+%----------SUMMARY-------------------------------
+\section{Summary}
+\begin{flushleft}
+	\small
+	As a self-taught web developer with over 3 years of experience in designing and developing fully functional websites, I am passionate about learning new technologies, making things by myself, and working in multiple fields
+\end{flushleft}
+
+%----------TECHNICAL SKILLS----------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+	\small
+	\item \textbf{Languages:} JavaScript (Typescript), HTML, CSS, C++, Python\vspace{-5pt}
+	\item \textbf{Technologies:} React (NextJS), Vue (Nuxt), TailwindCSS, NodeJS (ExpressJS), Tauri, SQLite, MongoDB, Firebase, Git/GitHub\vspace{-5pt}
+	\item \textbf{Tools:} Visual Studio Code, Figma, Adobe Illustrator\vspace{-5pt}
+	\item \textbf{Soft Skills:} Working independently, Problem-solving, Teamwork, Communication, Time Management\vspace{-5pt}
+	\item \textbf{Others:}\vspace{-5pt}
+	      \begin{itemize}[leftmargin=*]
+		      \small
+		      \item Competency in Software Engineering, Competitive Programming\vspace{-1pt}
+		      \item Strong computer science foundations in OOP, Data Structures and Algorithm\vspace{-1pt}
+		      \item Experience in building and using RESTful APIs; designing simple, minimalism logos; creating 2D games and building desktop apps\vspace{-1pt}
+	      \end{itemize}
+\end{itemize}
+
+%----------PROJECTS------------------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{yublog-nuxt}{Apr 2025 - Present}
+{\href{https://yublog-nuxt.vercel.app/}{yublog-nuxt.vercel.app}}
+{\href{https://github.com/yuran1811/yublog-nuxt}{yuran1811/yublog-nuxt}}
+\resumeItemListStart
+\resumeItem{Description}
+{My personal blog built with Nuxt3}
+\resumeItem{Technologies}
+{Vue (Nuxt), TypeScript, Tailwind CSS}
+\resumeItemListEnd
+
+\resumeSubheading
+{yukey}{Feb 2024 - Present}
+{\href{https://github.com/yuran1811/yukey/releases}{yukey/releases}}
+{\href{https://github.com/yuran1811/yukey}{yuran1811/yukey}}
+\resumeItemListStart
+\resumeItem{Description}
+{An open source keystroke visualizer that enables you to share your keystroke and mouse click actions for presenting, recording, or collaborating with others.}
+\resumeItem{Technologies}
+{Tauri, ReactJS, TypeScript, Tailwind CSS}
+\resumeItemListEnd
+
+\resumeSubheading
+{yuran-skills-icon}{Jul 2024 - Present}
+{\href{https://skill-icons-livid.vercel.app/icons?i=all}{skill-icons-livid.vercel.app/icons?i=all}}
+{\href{https://github.com/yuran1811/yuran-skill-icons}{yuran1811/yuran-skill-icons}}
+\resumeItemListStart
+\resumeItem{Description}
+{Showcase your skills on your GitHub or resumé with ease!}
+\resumeItem{Technologies}
+{Qwik, TypeScript}
+\resumeItemListEnd
+
+\resumeSubheading
+{yublog-next}{Aug 2022 - Present}
+{\href{https://yuran1811-blog.vercel.app/}{yuran1811-blog.vercel.app}}
+{\href{https://github.com/yuran1811/yublog-next}{yuran1811/yublog-next}}
+\resumeItemListStart
+\resumeItem{Description}
+{A personal blog shares my programming experience and some coding tips.}
+\resumeItem{Technologies}
+{ReactJS (NextJS), TypeScript, Tailwind CSS, Sanity Studio.}
+\resumeItemListEnd
+
+\resumeSubheading
+{scorie}{Jun 2022 - Present}
+{\href{https://scorie.vercel.app/}{scorie.vercel.app}}
+{\href{https://github.com/yuran1811/scorie}{yuran1811/scorie}}
+\resumeItemListStart
+\resumeItem{Description}
+{A PWA (Progressive Web App) app makes school life much easier.}
+\resumeItem{Technologies}
+{ReactJS, TypeScript, Tailwind CSS, Firebase.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------EDUCATION-----------------------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{VNU - University of Science}{District 5, HCMC, Viet Nam}
+{Bachelor's degree, Informatic Technologies}{2023 -- Present}
+\resumeSubheading
+{Hung Vuong Highschool for the Gifted}{Thu Dau Mot, Binh Duong, Viet Nam}
+{Specilized in IT}{2020 -- 2023}
+\resumeSubHeadingListEnd
+
+%----------Contact Info----------------------
+\section{Contact}
+\begin{itemize}[leftmargin=*]
+	\small
+	\item \textbf{Github:} \href{https://github.com/yuran1811}{github.com/yuran1811}\vspace{-5pt}
+	\item \textbf{Facebook:} \href{https://www.facebook.com/YuranLegends}{facebook.com/YuranLegends}\vspace{-5pt}
+	\item \textbf{YouTube:} \href{https://www.youtube.com/channel/UCLXNBb-jZRS_3o_itGGrGRA?view_as=subscriber}{youtube.com/@yuranlegends6446
+	      }\vspace{-5pt}
+\end{itemize}
+\end{document}
