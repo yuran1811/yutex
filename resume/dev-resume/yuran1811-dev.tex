@@ -15,11 +15,11 @@
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\labelitemii}{\( \circ \)}
 
-\addtolength{\textwidth}{1in}
+\addtolength{\textwidth}{1.5in}
 \addtolength{\textheight}{1.0in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\oddsidemargin}{-0.8in}
+\addtolength{\evensidemargin}{-.7in}
 
 \urlstyle{same}\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
 \titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
@@ -29,18 +29,18 @@
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \parbox[t]{0.5\textwidth}{\small\itshape#3} & \textit{\small#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1} & \textit{\small#2} \\
     \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2\vspace{-2pt}}}}
@@ -53,38 +53,102 @@
 \begin{document}
 %----------HEADING-------------------------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
- \textbf{\href{https://github.com/yuran1811}{Ngo Nguyen The Khoa}} & Email: \href{mailto:khoanntti2023@gmail.com}{khoanntti2023@gmail.com}\\
- \href{https://www.linkedin.com/in/yuran1811}{linkedin.com/in/yuran1811} & Phone: \href{tel:+84382423217}{+84 382423217} \\
+	\textbf{\href{https://github.com/yuran1811}{Ngo Nguyen The Khoa}} & Email: \href{mailto:khoanntti2023@gmail.com}{khoanntti2023@gmail.com}\\
+	\href{https://www.linkedin.com/in/yuran1811}{linkedin.com/in/yuran1811} & Phone: \href{tel:+84382423217}{+84 382423217} \\
 \end{tabular*}
 
 %----------SUMMARY-------------------------------
 \section{Summary}
 \begin{flushleft}\small
-Results-driven Software Engineer with 3+ years of experience developing scalable web applications and open-source tools. Proven ability to deliver production-ready solutions with high usability and cost efficiency, optimize performance (96+ Lighthouse scores, good SEO ranking for branded queries), and automate CI/CD pipelines to reduce deployment time and enhance reliability.
+	Results-driven Software Engineer with 3+ years of experience developing scalable applications. Proven ability to deliver production-ready solutions with high usability and cost efficiency, optimize performance (96+ Lighthouse scores, good SEO ranking for branded queries), automate CI/CD pipelines to reduce deployment time and enhance reliability.
 \end{flushleft}
 
 %----------TECHNICAL SKILLS----------------------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*]\small
-	\item \textbf{Languages:} JavaScript (TypeScript), HTML, CSS, C++, Python, SQL.\vspace{-5pt}
-	\item \textbf{Technologies:} ReactJS (NextJS), VueJS (NuxtJS), NodeJS (ExpressJS), TailwindCSS, Supabase, Firebase, MongoDB, Git/GitHub, Docker, Terraform, Ansible.\vspace{-5pt}
-	\item \textbf{Tools:} Jira, Figma, Adobe Illustrator.\vspace{-5pt}
+	\item \textbf{Languages:} JavaScript (TypeScript), HTML, CSS, C/C++, Python, SQL.\vspace{-5pt}
+	\item \textbf{Technologies:} ReactJS (NextJS), VueJS (NuxtJS), ExpressJS, TailwindCSS, Git/GitHub, Docker, Terraform, Ansible.\vspace{-5pt}
+	\item \textbf{Tools:} Jira, Figma, Adobe Illustrator, GitHub Copilot, Claude Code.\vspace{-5pt}
 	\item \textbf{Soft Skills:} Working independently, Teamwork, Communication, Time Management.\vspace{-5pt}
 	\item \textbf{Others:}\vspace{-5pt}
- 	\begin{itemize}[leftmargin=*]
-  		\item Proficient in competitive programming with strong problem-solving skills.\vspace{-1pt}
-		\item Solid foundations in Object-Oriented Programming (OOP), Data Structures, and Algorithms.\vspace{-1pt}
-		\item Experienced in setting up CI/CD pipelines and automation using GitHub Actions, Docker, Terraform, and Ansible.\vspace{-1pt}
-		\item Skilled in building and integrating RESTful APIs, designing logos, and developing desktop applications and 2D games.
-	\end{itemize}
+	      \begin{itemize}[leftmargin=*]
+		      \item Proficient in competitive programming with strong problem-solving skills.\vspace{-1pt}
+		      \item Solid foundations in Object-Oriented Programming (OOP), Data Structures, and Algorithms.\vspace{-1pt}
+		      \item Experienced in setting up CI/CD pipelines and automation using GitHub Actions, Docker, Terraform, and Ansible.\vspace{-1pt}
+		      \item Skilled in building and integrating RESTful APIs, designing logos, developing desktop applications and 2D games.
+	      \end{itemize}
 \end{itemize}
+
+%----------EXPERIENCE-----------------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Tiger Tribe (A HEINEKEN Company)}{HCMC, Vietnam}
+{Frontend Engineer Intern}{Dec 2025 - Present}\vspace{-8pt}
+\begin{flushleft}\small
+ \textbf{Company Context:} A digital innovation hub developing internal and consumer-facing tech solutions.\\
+	\textbf{Scope \& Responsibilities:} Managed frontend development for internal business platforms. Participated in Agile/Scrum processes, code reviews, and collaborated with cross-functional teams to ensure a scalable codebase.
+\end{flushleft}\vspace{-18pt}
+\resumeItemListStart
+\item\small{\textbf{Streamlined global restructuring operations} by developing the HBS tool, replacing manual, error-prone Excel tracking with a centralized platform that syncs directly with PowerBI for real-time transition visualization across regional hubs.}
+\item\small{\textbf{Accelerated enterprise-wide AI capability building} by developing interactive e-learning user interfaces and seamlessly integrating an OpenAPI-powered chatbot backend to facilitate hands-on training for staff.}
+\item\small{\textbf{Ensured high system scalability and reduced production bugs} via strict TypeScript architecture, enabling the HBS platform to be successfully cloned and adopted as the central project management tool.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Freelancer}{HCMC, Vietnam}
+{Software Engineer}{Jun 2025 - Present}\vspace{-8pt}
+\begin{flushleft}\small
+	\textbf{Company Context:} Independent software engineer delivering scalable, production-ready full-stack web applications for diverse clients.
+\end{flushleft}\vspace{-18pt}
+\resumeItemListStart
+\item\small{\textbf{Streamlined content deployment workflows} by architecting a full-stack platform for The P Mortgage using Next.js and Directus CMS, enabling seamless, rapid static content generation.}
+\item\small{\textbf{Decreased infrastructure maintenance overhead} by implementing Komodo for centralized VPS management, streamlining service deployments via Docker containers and Compose.}
+\item\small{\textbf{Achieved a 96+ Lighthouse performance score and improved SEO rankings} by configuring Nginx to optimize Next.js rendering, load times, and server performance for The P Mortgage platform.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 %----------PROJECTS------------------------------
 \section{Projects}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{wanhub}{May 2025 -- Present}
+{thep}{Jan 2026 -- Present}
+{\href{https://thepcapital.ca}{thepcapital.ca}}
+{}
+\resumeItemListStart
+\resumeItem{Description}
+{A comprehensive mortgage platform featuring advanced financial calculation tools for home buyers.}
+\resumeItem{Technologies}
+{ReactJS (NextJS), Tailwind CSS, TypeScript, Directus CMS, Docker, Nginx.}
+\resumeItem{Key Contributions}
+{\begin{itemize}[leftmargin=*]
+  \item \small{\textbf{Enabled out-of-the-box financial planning for users} by engineering interactive, high-performance calculators for monthly mortgage payments, Gross Debt Service (GDS), and Total Debt Service (TDS).}
+		\item \small{\textbf{Streamlined content management and boosted platform scalability} by integrating Directus CMS with a robust Next.js and Hono backend, securely deployed via Docker and Nginx.}
+	\end{itemize}}
+\resumeItemListEnd
+
+\resumeSubheading
+{dooriot}{Sep 2025 -- Dec 2025}
+{}
+{\href{https://github.com/yuran1811/hcmus-iot--dooriot}{yuran1811/hcmus-iot--dooriot}}
+\resumeItemListStart
+\resumeItem{Description}
+{A secure, IoT-connected smart door system featuring NFC access control and real-time remote monitoring.}
+\resumeItem{Technologies}
+{Arduino, VueJS (NuxtJS), Tailwind CSS, TypeScript, Nx, Docker.}
+\resumeItem{Key Contributions}
+{\begin{itemize}[leftmargin=*]
+  \item \small{\textbf{Engineered seamless hardware-to-cloud integration} between Arduino sensors (NFC, motion) and a scalable web backend, achieving real-time remote access control with $10ms$ latency.}
+		\item \small{\textbf{Developed a comprehensive, responsive web dashboard} using NuxtJS and Tailwind CSS, enabling users to manage device access, track activity logs, and receive instant tamper notifications.}
+		\item \small{\textbf{Streamlined system scalability and deployment speed} by utilizing an Nx monorepo structure, containerizing services with Docker, and deploying via Render and Vercel.}
+	\end{itemize}}
+\resumeItemListEnd
+
+\resumeSubheading
+{wanhub}{May 2025 -- Sep 2025}
 {\href{https://hcmus-intro2se-wanhub.vercel.app}{hcmus-intro2se-wanhub.vercel.app}}
 {}
 \resumeItemListStart
@@ -94,13 +158,13 @@ Results-driven Software Engineer with 3+ years of experience developing scalable
 {VueJS (NuxtJS), NodeJS (ExpressJS), Tailwind CSS, TypeScript, Prisma, Supabase, Docker, Terraform, Ansible, Nx.}
 \resumeItem{Key Contributions}
 {\begin{itemize}[leftmargin=*]
-	\item Automated CI/CD workflows by designing GitHub Actions pipelines and integrating Vercel CLI, Docker, Terraform, and Ansible, improving deployment speed and reliability.
- \item Led technology selection and development environment setup; enforced code quality and maintainability through peer reviews, best practices, unit testing (Vitest), end-to-end testing (Playwright), and refactoring.
-	\item Developed secure authentication and authorization flows and built interactive learning modules (flashcards, dictation, cloze, multiple-choice quizzes) with responsive UI.
-	\item Architected the system design and implemented scalable RESTful API endpoints to support application features.
-	\item Created intuitive UI component libraries and branding assets, enhancing design consistency and user experience.
-	\item Configured Jira with custom automations to streamline project tracking and reduce manual effort.
-\end{itemize}}
+		\item Automated CI/CD workflows by designing GitHub Actions pipelines and integrating Vercel CLI, Docker, Terraform, and Ansible, improving deployment speed and reliability.
+		\item Led technology selection and development environment setup; enforced code quality and maintainability through peer reviews, best practices, unit testing (Vitest), end-to-end testing (Playwright), and refactoring.
+		\item Developed secure authentication and authorization flows and built interactive learning modules (flashcards, dictation, cloze, multiple-choice quizzes) with responsive UI.
+		\item Architected the system design and implemented scalable RESTful API endpoints to support application features.
+		\item Created intuitive UI component libraries and branding assets, enhancing design consistency and user experience.
+		\item Configured Jira with custom automations to streamline project tracking and reduce manual effort.
+	\end{itemize}}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -114,81 +178,10 @@ Results-driven Software Engineer with 3+ years of experience developing scalable
 {VueJS (NuxtJS), Tailwind CSS, TypeScript.}
 \resumeItem{Key Contributions}
 {\begin{itemize}[leftmargin=*]
-	\item Developed a responsive, SEO-friendly blog platform with NuxtJS and Tailwind CSS\@.
-	\item Used Nuxt Content (git-based CMS) for easy publishing and customization.
-	\item Optimized performance and accessibility, achieving fast load times across devices.
-\end{itemize}}
-\resumeItemListEnd
-
-\resumeSubheading
-{yukey}{Feb 2024 -- Present}
-{\href{https://github.com/yuran1811/yukey/releases}{yukey/releases}}
-{\href{https://github.com/yuran1811/yukey}{yuran1811/yukey}}
-\resumeItemListStart
-\resumeItem{Description}
-{An open-source keystroke visualizer for sharing keyboard and mouse actions during presentations, recordings, or collaborative sessions.}
-\resumeItem{Technologies}
-{Tauri, ReactJS, Tailwind CSS, TypeScript.}
-\resumeItem{Key Contributions}
-{\begin{itemize}[leftmargin=*]
-    \item Developed a lightweight desktop application with Tauri, enabling cross-platform support and low resource usage.
-    \item Built an interactive UI in ReactJS with customizable themes for improved presentation visibility.
-    \item Published open-source releases on GitHub, making the tool accessible for developers, streamers, and educators.
-\end{itemize}}
-\resumeItemListEnd
-
-\resumeSubheading
-{yublog-next}{Aug 2022 -- Present}
-{\href{https://yuran1811-blog.vercel.app/}{yuran1811-blog.vercel.app}}
-{\href{https://github.com/yuran1811/yublog-next}{yuran1811/yublog-next}}
-\resumeItemListStart
-\resumeItem{Description}
-{A personal technical blog for documenting programming experience and sharing coding tips, built to explore modern full-stack development.}
-\resumeItem{Technologies}
-{ReactJS (NextJS), Tailwind CSS, TypeScript, Sanity Studio.}
-\resumeItem{Key Contributions}
-{\begin{itemize}[leftmargin=*]
-    \item Developed a responsive and SEO-optimized blog using NextJS and Tailwind CSS, ensuring fast load times and accessibility.
-    \item Integrated Sanity Studio as a headless CMS to enable efficient content creation and management.
-\end{itemize}}
-\resumeItemListEnd
-
-\resumeSubheading
-{yupartify}{Apr 2025 -- Apr 2025}
-{\href{https://github.com/yuran1811/hcmus-os--fat32/releases}{hcmus-os--fat32/releases}}
-{\href{https://github.com/yuran1811/hcmus-os--fat32}{yuran1811/hcmus-os--fat32}}
-\resumeItemListStart
-\resumeItem{Description}
-{A cross-platform disk reader application supporting NTFS and FAT32 file systems, available with both GUI and CLI interfaces.}
-\resumeItem{Technologies}
-{Tauri (Rust), VueJS (NuxtJS), TypeScript, Tailwind CSS.}
-\resumeItem{Key Contributions}
-{\begin{itemize}[leftmargin=*]
-    \item Developed dual-interface support (GUI and CLI) to accommodate both technical and non-technical users.
-    \item Implemented folder tree visualization and file preview for supported formats (e.g., TXT, JSON).
-    \item Built a lightweight, fast, and cross-platform desktop application using Tauri with Rust and NuxtJS\@.
-\end{itemize}}
-\resumeItemListEnd
-
-\resumeSubheading
-{scorie}{Jun 2022 -- Aug 2023}
-{\href{https://scorie.vercel.app/}{scorie.vercel.app}}
-{\href{https://github.com/yuran1811/scorie}{yuran1811/scorie}}
-\resumeItemListStart
-\resumeItem{Description}
-{A Progressive Web App (PWA) designed to make school life easier by combining productivity tools, analytics, and personalization in a single platform.}
-\resumeItem{Technologies}
-{ReactJS, Tailwind CSS, TypeScript, Firebase.}
-\resumeItem{Key Contributions}
-{\begin{itemize}[leftmargin=*]
-	\item Developed a responsive PWA with offline support and homescreen installation for seamless cross-device usage.
-	\item Implemented multi-language support (English, Vietnamese, extensible to more locales).
-	\item Built authentication with Google, Facebook, Email/Password, and guest accounts to support diverse user needs.
-	\item Created productivity and learning tools including timers, weather, motivational quotes, notes (with drag-and-drop, CRUD, and sharing), and score tracking.
-	\item Integrated analytics features with interactive charts (bar, polar, radar) using ApexCharts for real-time insights.
-	\item Designed a modern glassmorphism UI with smooth animations powered by Framer Motion.
-	\item Added advanced features such as score prediction to enhance decision-making for students.
-\end{itemize}}
+		\item Developed a responsive, SEO-friendly blog platform with NuxtJS and Tailwind CSS\@.
+		\item Used Nuxt Content (git-based CMS) for easy publishing and customization.
+		\item Optimized performance and accessibility, achieving fast load times across devices.
+	\end{itemize}}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -197,11 +190,11 @@ Results-driven Software Engineer with 3+ years of experience developing scalable
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{VNUHCM - University of Science}{227 Nguyen Van Cu St., Cho Quan Ward, HCMC, Viet Nam}
-{Bachelor's degree, Information Technology}{2023 -- Present}
+{VNUHCM - University of Science}{Cho Quan Ward, HCMC, Viet Nam}
+{Bachelor's degree, Software Engineering; GPA\@: 3.93\\Designer of SAB (Student Activity Board)}{2023 -- Present}
 \resumeSubheading
 {Hung Vuong Highschool for the Gifted}{Thu Dau Mot Ward, HCMC, Viet Nam}
-{Specilized in IT}{2020 -- 2023}
+{Specialized in IT}{2020 -- 2023}
 \resumeSubHeadingListEnd
 
 %----------Contact Info----------------------
@@ -210,7 +203,6 @@ Results-driven Software Engineer with 3+ years of experience developing scalable
 	\item \textbf{Github:} \href{https://github.com/yuran1811}{github.com/yuran1811}\vspace{-5pt}
 	\item \textbf{Linkedin:} \href{https://www.linkedin.com/in/yuran1811}{linkedin.com/in/yuran1811}\vspace{-5pt}
 	\item \textbf{HackerRank:} \href{https://www.hackerrank.com/profile/yuran1811}{hackerrank.com/profile/yuran1811}\vspace{-5pt}
-	% \item \textbf{Facebook:} \href{https://www.facebook.com/YuranLegends}{facebook.com/YuranLegends}\vspace{-5pt}
-	% \item \textbf{YouTube:} \href{https://www.youtube.com/channel/UCLXNBb-jZRS_3o_itGGrGRA?view_as=subscriber}{youtube.com/@yuranlegends6446}
 \end{itemize}
+
 \end{document}
